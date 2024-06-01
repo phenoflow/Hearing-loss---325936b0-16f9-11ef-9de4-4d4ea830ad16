@@ -39,14 +39,11 @@ Z911.00,readv2
 Z911500,readv2
 Z8B5500,readv2
 Z8B5311,readv2
-8D23.00,readv2
 2DG..00,readv2
-Z911100,readv2
 ZE87.19,readv2
 1C16.00,readv2
 ZE87.13,readv2
 Z8B5200,readv2
-ZV53200,readv2
 F591100,readv2
 ZE87.17,readv2
 F591300,readv2
@@ -75,6 +72,9 @@ H90.2,readv2
 H91.9,readv2
 H91.8,readv2
 H90.8,readv2
+8D23.00,readv2
+Z911100,readv2
+ZV53200,readv2
 F592.11,readv2
 F592.00,readv2
 F592100,readv2
