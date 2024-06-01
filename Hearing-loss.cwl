@@ -129,8 +129,8 @@ steps:
       potentialCases:
         id: potentialCases
         source: loss---primary/output
-  mixed-hearing-loss---primary:
-    run: mixed-hearing-loss---primary.cwl
+  hearing-loss-fitting---primary:
+    run: hearing-loss-fitting---primary.cwl
     out:
     - output
     in:
@@ -140,6 +140,17 @@ steps:
       potentialCases:
         id: potentialCases
         source: hearing-loss-specified---primary/output
+  mixed-hearing-loss---primary:
+    run: mixed-hearing-loss---primary.cwl
+    out:
+    - output
+    in:
+      inputModule:
+        id: inputModule
+        source: inputModule14
+      potentialCases:
+        id: potentialCases
+        source: hearing-loss-fitting---primary/output
   unilateral-hearing-loss---primary:
     run: unilateral-hearing-loss---primary.cwl
     out:
@@ -147,7 +158,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule14
+        source: inputModule15
       potentialCases:
         id: potentialCases
         source: mixed-hearing-loss---primary/output
@@ -158,7 +169,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule15
+        source: inputModule16
       potentialCases:
         id: potentialCases
         source: unilateral-hearing-loss---primary/output
@@ -169,7 +180,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule16
+        source: inputModule17
       potentialCases:
         id: potentialCases
         source: congenital-hearing-loss---primary/output
@@ -180,7 +191,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule17
+        source: inputModule18
       potentialCases:
         id: potentialCases
         source: hearing-loss-mutism---primary/output
@@ -191,7 +202,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule18
+        source: inputModule19
       potentialCases:
         id: potentialCases
         source: sensorineural-hearing-loss---primary/output
@@ -202,7 +213,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule19
+        source: inputModule20
       potentialCases:
         id: potentialCases
         source: hearing-loss-noise---primary/output
@@ -213,7 +224,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule20
+        source: inputModule21
       potentialCases:
         id: potentialCases
         source: hearing-loss-frequency---primary/output
@@ -224,7 +235,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule21
+        source: inputModule22
       potentialCases:
         id: potentialCases
         source: hearing-loss-combined---primary/output
@@ -235,7 +246,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule22
+        source: inputModule23
       potentialCases:
         id: potentialCases
         source: hearing-loss-presbyacusis---primary/output
@@ -246,7 +257,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule23
+        source: inputModule24
       potentialCases:
         id: potentialCases
         source: hearing-loss-classified---primary/output
@@ -257,7 +268,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule24
+        source: inputModule25
       potentialCases:
         id: potentialCases
         source: hearing-loss-provision---primary/output
@@ -268,7 +279,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule25
+        source: inputModule26
       potentialCases:
         id: potentialCases
         source: hearing-loss-anomaly---primary/output
@@ -279,7 +290,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule26
+        source: inputModule27
       potentialCases:
         id: potentialCases
         source: sudden-hearing-loss---primary/output
@@ -290,7 +301,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule27
+        source: inputModule28
       potentialCases:
         id: potentialCases
         source: other-hearing-loss---primary/output
@@ -301,7 +312,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule28
+        source: inputModule29
       potentialCases:
         id: potentialCases
         source: hearing-loss-presbycusis---primary/output
@@ -417,6 +428,10 @@ inputs:
     type: File
   inputModule28:
     id: inputModule28
+    doc: Python implementation unit
+    type: File
+  inputModule29:
+    id: inputModule29
     doc: Python implementation unit
     type: File
 outputs:

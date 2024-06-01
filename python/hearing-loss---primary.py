@@ -2,7 +2,7 @@
 
 import sys, csv, re
 
-codes = [{"code":"Z911.00","system":"readv2"},{"code":"Z911500","system":"readv2"},{"code":"Z8B5500","system":"readv2"},{"code":"Z8B5311","system":"readv2"},{"code":"8D23.00","system":"readv2"},{"code":"2DG..00","system":"readv2"},{"code":"Z911100","system":"readv2"},{"code":"ZE87.19","system":"readv2"},{"code":"1C16.00","system":"readv2"},{"code":"ZE87.13","system":"readv2"},{"code":"Z8B5200","system":"readv2"},{"code":"ZV53200","system":"readv2"},{"code":"F591100","system":"readv2"},{"code":"ZE87.17","system":"readv2"},{"code":"F591300","system":"readv2"},{"code":"1C19.00","system":"readv2"},{"code":"8D21.00","system":"readv2"},{"code":"Z8B5300","system":"readv2"},{"code":"H91.0","system":"readv2"}];
+codes = [{"code":"Z911.00","system":"readv2"},{"code":"Z911500","system":"readv2"},{"code":"Z8B5500","system":"readv2"},{"code":"Z8B5311","system":"readv2"},{"code":"2DG..00","system":"readv2"},{"code":"ZE87.19","system":"readv2"},{"code":"1C16.00","system":"readv2"},{"code":"ZE87.13","system":"readv2"},{"code":"Z8B5200","system":"readv2"},{"code":"F591100","system":"readv2"},{"code":"ZE87.17","system":"readv2"},{"code":"F591300","system":"readv2"},{"code":"1C19.00","system":"readv2"},{"code":"8D21.00","system":"readv2"},{"code":"Z8B5300","system":"readv2"},{"code":"H91.0","system":"readv2"}];
 REQUIRED_CODES = 1;
 with open(sys.argv[1], 'r') as file_in, open('hearing-loss-potential-cases.csv', 'w', newline='') as file_out:
     csv_reader = csv.DictReader(file_in)
